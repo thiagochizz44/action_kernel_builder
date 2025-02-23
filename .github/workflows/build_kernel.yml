@@ -6,11 +6,11 @@ on:
       KERNEL_SOURCE:
         description: 'Kernel source URL'
         required: true
-        default: 'https://github.com/thiagochizz44/android_kernel_motorola_sm6150'
+        default: 'https://github.com/thiagochizz44/kernel_motorola_illinois.git'
       KERNEL_BRANCH:
         description: 'Kernel branch'
         required: true
-        default: 'a15'
+        default: 'fushiguro-inline'
       KERNEL_NAME:
         description: 'Kernel/zip name'
         required: true
@@ -43,7 +43,7 @@ jobs:
           rm -rf ${{ github.workspace }}/*
           sudo apt-get update
           sudo apt-get install -y build-essential bc gcc-aarch64-linux-gnu gcc-arm-linux-gnueabi libssl-dev libfl-dev
-          sudo apt-get install -y curl git ftp lftp wget libarchive-tools ccache python-is-python3
+          sudo apt-get install -y curl git ftp lftp wget libarchive-tools python2 ccache python-is-python3
           sudo apt-get install -y zip unzip tar gzip bzip2 rar unrar cpio jq
           
       - name: Cloning Kernel Source
