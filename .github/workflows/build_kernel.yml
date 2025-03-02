@@ -6,11 +6,11 @@ on:
       KERNEL_SOURCE:
         description: 'Kernel source URL'
         required: true
-        default: 'https://github.com/thiagochizz44/kernel_motorola_illinois.git'
+        default: 'https://github.com/thiagochizz44/kernel-msm-4.14.git'
       KERNEL_BRANCH:
         description: 'Kernel branch'
         required: true
-        default: 'fushiguro-inline'
+        default: 'qti-openela'
       KERNEL_NAME:
         description: 'Kernel/zip name'
         required: true
