@@ -30,7 +30,7 @@ on:
 
 jobs:
   Build_Kernel:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     permissions: write-all
     defaults:
       run:
